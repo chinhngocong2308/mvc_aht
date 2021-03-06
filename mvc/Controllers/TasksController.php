@@ -10,7 +10,7 @@ class TasksController extends Controller {
 
 		$tasks = new TaskRepository();
 
-		$data['tasks'] = $tasks->getall();
+		$data['tasks'] = $tasks->getAll();
 		$this->set($data);
 		$this->render("index");
 	}
